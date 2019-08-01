@@ -1,22 +1,54 @@
-<ion-header>
+<ion-header class="background-search">
+  <ion-grid class="align-center flex column grid">
 
-  <ion-navbar>
-    <ion-title>{{ 'SEARCH_TITLE' | translate }}</ion-title>
-  </ion-navbar>
+    <ion-row>
+      <ion-col size="5" class="align-center flex column card margin1">
+          <img src="../../assets/health-icon.svg" width="90%"/>
+          <label class="label-search">Saúde</label>
+      </ion-col>
+      <ion-col size="1" style="max-width:20px !important;">
+      </ion-col>
+      <ion-col size="5" class="align-center flex column card margin2">
+          <img src="../../assets/shop.svg" width="90%"/>
+          <label class="label-search">Compras</label>
+      </ion-col>
+    </ion-row>
+    <br/>
 
+    <ion-row>
+        <ion-col size="5" class="align-center flex column card margin1">
+            <img src="../../assets/health-icon.svg" width="90%"/>
+            <label class="label-search">Saúde</label>
+        </ion-col>
+        <ion-col size="1" style="max-width:20px !important;">
+        </ion-col>
+        <ion-col size="5" class="align-center flex column card margin2">
+            <img src="../../assets/shop.svg" width="90%"/>
+            <label class="label-search">Compras</label>
+        </ion-col>
+      </ion-row>
+      <br/>
+
+      <ion-row>
+          <ion-col size="5" class="align-center flex column card margin1">
+              <img src="../../assets/health-icon.svg" width="90%"/>
+              <label class="label-search">Saúde</label>
+          </ion-col>
+          <ion-col size="1" style="max-width:20px !important;">
+          </ion-col>
+          <ion-col size="5" class="align-center flex column card margin2">
+              <img src="../../assets/shop.svg" width="90%"/>
+              <label class="label-search">Compras</label>
+          </ion-col>
+        </ion-row>
+        <br/>
+
+
+
+
+  </ion-grid>
 </ion-header>
 
 
 <ion-content>
-  <ion-searchbar (ionInput)="getItems($event)" placeholder="{{ 'SEARCH_PLACEHOLDER' | translate }}"></ion-searchbar>
-  <ion-list>
-    <button ion-item (click)="openItem(item)" *ngFor="let item of currentItems">
-      <ion-avatar item-start>
-        <img [src]="item.profilePic" />
-      </ion-avatar>
-      <h2>{{item.name}}</h2>
-      <p>{{item.about}}</p>
-      <ion-note item-end *ngIf="item.note">{{item.note}}</ion-note>
-    </button>
-  </ion-list>
 </ion-content>

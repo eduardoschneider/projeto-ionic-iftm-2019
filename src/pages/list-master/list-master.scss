@@ -13,9 +13,19 @@
   display: flex;
 }
 
+.column {
+  flex-direction: column;
+}
+
+.profile-pic {
+  border-radius: 100%;
+  width:11.2vh;
+  height:11.3vh;
+}
+
 .border-profile-picture {
-  width:68px;
-  height:68px;
+  width:13vh;
+  height:13vh;
   border-radius:100%;
   border:2px dashed black;
 }
@@ -79,4 +89,8 @@
 .card-md, .card-ios {
   box-shadow:none;
   margin-top: 4vh;
+}
+
+.icon-margin {
+  margin-top:7px;
 }

@@ -1,4 +1,5 @@
 .tabs-md .tabbar, .tabs-ios .tabbar {
+    height: 57px !important;
     background-color:#77d178 !important;
 }
 
@@ -12,3 +13,9 @@
 //  border-right: 1px solid white;
 //}
 
+.tabs-md .tab-button[aria-selected=true] {
+  color: #fff; /*your  text color */
+  background: #619b61; /* your background color*/
+  border-left:1px solid #3c5c41;
+  border-right:1px solid #3c5c41;
+}
