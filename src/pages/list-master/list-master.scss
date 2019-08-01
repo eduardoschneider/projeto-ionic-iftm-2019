@@ -1,0 +1,82 @@
+.toolbar-background {
+  background: url(../../assets/bg-header.jpg) !important;
+  background-size: cover;
+}
+
+.align-center {
+  text-align: center;
+  align-items:center;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.border-profile-picture {
+  width:68px;
+  height:68px;
+  border-radius:100%;
+  border:2px dashed black;
+}
+
+.name-tag {
+  font-weight: bold;
+  font-size:17px;
+  line-height: 0.8;
+}
+
+.description {
+  font-size:14px;
+}
+
+.trophys {
+  background-color: white;
+  border-radius:10px 10px 0 0;
+  width:90%;
+  height:60px;
+  position: absolute   !important;
+  left: 5%;
+  bottom:-4px;
+  font-weight: 700;
+  padding-bottom: 70px !important;
+}
+
+.photo {
+  margin-top:-50px;
+}
+
+.toolbar {
+  height:40vh !important;
+
+}
+
+.text-content-list-master {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding-left:3vw;
+  padding-right:3vw;
+  height:100%;
+  font-weight:100;
+  font-size:13px;
+  padding-bottom:2vw;
+  overflow: hidden;
+}
+
+.content-main-page{
+  background-color:white;
+}
+.header, .scroll-content {
+  background-color:transparent;
+}
+
+.header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
+  background-position: left 0 top -24px !important;
+
+}
+
+.card-md, .card-ios {
+  box-shadow:none;
+  margin-top: 4vh;
+}

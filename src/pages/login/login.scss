@@ -1,0 +1,67 @@
+.form {
+  margin-top:10vh;
+
+}
+
+* {
+  color:black;
+
+}
+
+.input-pattern {
+  background-color: transparent !important;
+  width:70vw !important;
+  height:20px !important;
+  margin-bottom:10px;
+  color:black;
+  font-weight: bold;
+
+}
+
+.login-button {
+  color: white;
+  background-color: #6cbc64;
+  width:107%;
+  font-size: 18px;
+  margin-top:15px;
+  height: 50px;
+  font-weight: bold;
+}
+
+.text-input-md {
+   margin: 5px 8px !important;
+}
+
+.transparent {
+  background-color: transparent !important;
+}
+
+.list-md .item-block .item-inner {
+  border-bottom: 2px solid #4d884d !important; //android
+}
+
+.list-md .item-input:last-child {
+  border-bottom: none !important; //android
+  border-color: #4d884d !important;
+}
+
+.item-ios.item-block .item-inner {
+  border-bottom:2px solid #4d884d !important; //iphone
+}
+
+.item-ios.item-block .item-inner:active {
+  border-bottom:2px solid #4d884d !important;
+}
+
+.list-md .item-input.item-input-has-focus:last-child, .list-md .item-input.item-input.item-input-has-focus:last-child {
+  border-bottom:none !important;
+  -webkit-border-shadow: none !important;
+  box-shadow: none !important;
+
+}
+
+.center {
+  display: block;
+  justify-content: center !important;
+  align-items: center;
+}

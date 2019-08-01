@@ -1,0 +1,31 @@
+<ion-content>
+  <div class="background"></div>
+  <div class="row">
+    <img src="assets/zebra.png" class="home-icon"/>
+  </div>
+  <form (submit)="sendPostRequest(account.usuario,account.password);" class="row form">
+    <ion-list>
+      <div class="col-12">
+        <ion-item class="transparent">
+          <img src="assets/zebra.png" width="10px" height="auto"/>
+          <ion-input placeholder="Usuário" class="input-pattern" type="text" [(ngModel)]="account.usuario" name="email"></ion-input>
+        </ion-item>
+      </div>
+      <br/>
+      <div class="col-12">
+        <ion-item class="transparent">
+          <ion-input placeholder="Senha" class="input-pattern" type="password" [(ngModel)]="account.password" name="password"></ion-input>
+        </ion-item>
+      </div>
+      <div padding>
+        <button ion-button color="primary" class="login-button" block>Login</button>
+      </div>
+
+    </ion-list>
+  </form>
+  <div class="row footer">
+    © copyright 2019 | design by eduardo schneider :)
+  </div>
+
+
+</ion-content>

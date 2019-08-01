@@ -1,0 +1,203 @@
+$blabla: blue;
+@import url(https://fonts.googleapis.com/css?family=Squada+One);
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap');
+* {
+	font-family: 'Darker Grotesque', sans-serif !important;
+}
+.content {
+	position:absolute !important;
+	display:flex;
+	align-items:center !important;
+	justify-content:center;
+	height:100%;
+	text-align:center;
+	padding:40px;
+	width:100%;
+    top:0;
+	font-size:25px;
+	font-weight:800;
+	text-align:center;
+}
+
+.background {
+	background-size:cover;
+	width:100%;
+	position:fixed;
+	height:100%;
+  background-image: url("../../assets/bg.jpg");
+  animation: shrink 15s infinite alternate;
+}
+
+@keyframes shrink {
+  0% {
+    background-size: 170% 110%;
+  }
+  100% {
+    background-size: 160% 100%;
+  }
+}
+
+.row {
+	display:flex;
+	align-items:flex-start;
+	justify-content:center;
+	position:relative;
+}
+
+
+.home-icon {
+	position:relative;
+	margin-top:50px;
+	width:25vh;
+	height:25vh;
+}
+
+.button-begin {
+	position:absolute;
+	bottom:150px;
+	width:100%;
+}
+
+
+.customLink {
+  display: block;
+  width: 220px;
+  height: 70px;
+  z-index: 1;
+}
+
+.customLink:after {
+  content: '';
+  background: linear-gradient(120deg, #0e6815, #0d180d, #00911f);
+  background-size: 400% 400%;
+  -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 4px 66px, 4px 100%, 100% 100%, 100% 0%, 0% 0%);
+  -moz-animation: gradient 3s ease-in-out infinite, border 1.5s forwards ease-in-out reverse;
+  -webkit-animation: gradient 3s ease-in-out infinite, border 1.5s forwards ease-in-out reverse;
+  animation: gradient 3s ease-in-out infinite, border 1.5s forwards ease-in-out reverse;
+}
+
+.customLink > span {
+  display: block;
+  background: linear-gradient(120deg, #0e6815, #0d180d, #00911f);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-animation: gradient 3s ease-in-out infinite;
+  -webkit-animation: gradient 3s ease-in-out infinite;
+  animation: gradient 3s ease-in-out infinite;
+}
+
+/* helpers */
+.absolute-centering, body:after, .customLink, .customLink:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.text-formatting, .customLink {
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 70px;
+  font-weight:800;
+  font-size: 25px;
+}
+
+/* motion */
+@-moz-keyframes gradient {
+  0% {
+    background-position: 14% 0%;
+  }
+  50% {
+    background-position: 87% 100%;
+  }
+  100% {
+    background-position: 14% 0%;
+  }
+}
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 14% 0%;
+  }
+  50% {
+    background-position: 87% 100%;
+  }
+  100% {
+    background-position: 14% 0%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 14% 0%;
+  }
+  50% {
+    background-position: 87% 100%;
+  }
+  100% {
+    background-position: 14% 0%;
+  }
+}
+@-moz-keyframes border {
+  0% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 4px 66px, 4px 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+  25% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 216px 66px, 216px 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+  50% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 100% 0%, 0% 0%);
+  }
+  75% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 0%, 0% 0%);
+  }
+  100% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 0% 100%);
+  }
+}
+@-webkit-keyframes border {
+  0% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 4px 66px, 4px 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+  25% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 216px 66px, 216px 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+  50% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 100% 0%, 0% 0%);
+  }
+  75% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 0%, 0% 0%);
+  }
+  100% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 0% 100%);
+  }
+}
+@keyframes border {
+  0% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 4px 66px, 4px 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+  25% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 216px 66px, 216px 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+  50% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 100% 0%, 0% 0%);
+  }
+  75% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 0%, 0% 0%);
+  }
+  100% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 0% 100%);
+  }
+}
+
+
+.footer {
+position:fixed;
+	bottom:10px;
+	width:100%;
+	font-weight:700;
+	font-size:13px;
+}
