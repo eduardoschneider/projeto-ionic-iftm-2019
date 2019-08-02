@@ -27,12 +27,15 @@
   width:13vh;
   height:13vh;
   border-radius:100%;
-  border:2px dashed black;
+  border:1px dashed black;
+  position: absolute;
+  animation: spin 11s infinite linear;
 }
 
 .name-tag {
   font-weight: bold;
   font-size:17px;
+  margin-top:1vh;
   line-height: 0.8;
 }
 
@@ -93,4 +96,31 @@
 
 .icon-margin {
   margin-top:7px;
+}
+
+@-moz-keyframes spin {
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+
+.intro-image {
+  width: 40vh;
+  margin-top:3vh;
+}
+
+.star, .award, .money, .intro-image {
+  animation: fadein 1.2s normal linear;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
