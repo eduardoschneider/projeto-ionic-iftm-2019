@@ -24,6 +24,8 @@
         <preference name="SplashStatusBarBackgroundColor" value="#fff" />
         <preference name="SplashNavigationBarBackgroundColor" value="#fff" />
         <preference name="NavigationBarBackgroundColor" value="#000" />
+        <preference name="NavigationBarFontColor" value="#000" />
+        <preference name="NavigationBarColor" value="#000" />
         <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application" xmlns:android="http://schemas.android.com/apk/res/android">
             <application android:networkSecurityConfig="@xml/network_security_config" />
         </edit-config>

@@ -1,6 +1,5 @@
 .tabs-md .tabbar, .tabs-ios .tabbar {
-    height: 57px !important;
-    background-color:#77d178 !important;
+    background-color:#94D38C !important;
 }
 
 //.tabs-md .tab-button.icon-only, .tabs-md .tab-button.has-title-only:nth-child(2) {
@@ -13,9 +12,7 @@
 //  border-right: 1px solid white;
 //}
 
-.tabs-md .tab-button[aria-selected=true] {
-  color: #fff; /*your  text color */
-  background: #619b61; /* your background color*/
-  border-left:1px solid #3c5c41;
-  border-right:1px solid #3c5c41;
+.tabs-md .tab-button[aria-selected=true], .tabs-ios .tab-button[aria-selected=true] {
+  background-color:rgb(135, 184, 129) !important;
 }
+

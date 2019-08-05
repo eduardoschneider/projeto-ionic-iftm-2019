@@ -35,11 +35,11 @@
 .transparent {
   background-color: transparent !important;
 }
-
-.list-md .item-block .item-inner {
-  border-bottom: 2px solid #4d884d !important; //android
+page-login {
+  .list-md .item-block .item-inner {
+    border-bottom: 2px solid #4d884d !important; //android
+  }
 }
-
 .list-md .item-input:last-child {
   border-bottom: none !important; //android
   border-color: #4d884d !important;
