@@ -1,67 +1,234 @@
-.form {
-  margin-top:10vh;
+.header {
+  background:url("../../assets/bg-lologin.png") no-repeat center center;
+  background-size: cover;
+  width:100%;
+  height:40vh;
+}
+
+.row {
+	display:flex;
+	align-items:flex-start;
+	justify-content:center;
+	position:relative;
+}
+
+.footer {
+position:fixed;
+	bottom:10px;
+	width:100%;
+	font-weight:400;
+  font-size:13px;
+  color:white;
+}
+
+.prato {
+  margin-top:20px;
+  position: absolute;
+  top:0vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  height:40vh;
 
 }
 
-* {
-  color:black;
-
+@font-face {
+  font-family: "font-login";
+  src: url(../../assets/font-login.otf);
 }
 
-.input-pattern {
-  background-color: transparent !important;
-  width:70vw !important;
-  height:20px !important;
-  margin-bottom:10px;
-  color:black;
-  font-weight: bold;
-
+.text-before-option {
+  width:100%;
+  text-align:center;
+  color:#e02d2d;
+  font-family:font-login;
+  font-size: 3vh;
+  line-height: 1.6;
+  padding:10px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
 }
 
-.login-button {
+.button-login-facebook {
+  margin-top:8px;
+  display: inline-block;
+  font-family: font;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  padding: 1.4vh 1.6em;
+  display: flex;
+  align-items: flex-start;
+  background: #4064AD;
+  border: none;
   color: white;
-  background-color: #6cbc64;
-  width:107%;
-  font-size: 18px;
-  margin-top:15px;
-  height: 50px;
-  font-weight: bold;
+  transition: 0.2s;
+  box-shadow:1px 1px 3px black;
+  font-size:13px;
+  font-weight:bold;
+  font-family:"Arial";
+  width:75%;
+  border-radius:5px;
+  line-height:1.65;
 }
 
-.text-input-md {
-   margin: 5px 8px !important;
+.button-login-google {
+  margin-top:10px;
+  display: inline-block;
+  font-family: font;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  padding: 1.4vh 1.6em;
+  display: flex;
+  align-items: flex-start;
+  background: #db3d29;
+  border: none;
+  color: white;
+  transition: 0.2s;
+  box-shadow:1px 1px 3px black;
+  font-size:13px;
+  font-weight:bold;
+  font-family:"Arial";
+  width:75%;
+  border-radius:5px;
+  line-height:1.65;
 }
 
-.transparent {
-  background-color: transparent !important;
-}
-page-login {
-  .list-md .item-block .item-inner {
-    border-bottom: 2px solid #4d884d !important; //android
-  }
-}
-.list-md .item-input:last-child {
-  border-bottom: none !important; //android
-  border-color: #4d884d !important;
-}
-
-.item-ios.item-block .item-inner {
-  border-bottom:2px solid #4d884d !important; //iphone
-}
-
-.item-ios.item-block .item-inner:active {
-  border-bottom:2px solid #4d884d !important;
-}
-
-.list-md .item-input.item-input-has-focus:last-child, .list-md .item-input.item-input.item-input-has-focus:last-child {
-  border-bottom:none !important;
-  -webkit-border-shadow: none !important;
-  box-shadow: none !important;
-
+.button-login {
+  margin-top:10px;
+  display: inline-block;
+  font-family: font;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  padding: 1.4vh 1.6em;
+  background: #db3d29;
+  border: none;
+  color: white;
+  transition: 0.2s;
+  box-shadow:1px 1px 3px black;
+  font-size:13px;
+  font-weight:bold;
+  font-family:"Arial";
+  width:75%;
+  text-align: center;
+  line-height: 65px;
+  border-radius:5px;
+  line-height:1.65;
 }
 
-.center {
-  display: block;
-  justify-content: center !important;
+.go-to-bottom {
+  width:100%;
+  bottom:0;
+  position: absolute;
+  padding-bottom:10%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-end;
+}
+
+
+.container-login {
+  margin-top:8px;
+  display: flex;
+  width:100%;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
+
+.material-textfield {
+  position: relative;
+  margin-top:5px;
+  margin-bottom:5px;
+  width:75%;
+}
+
+#nome {
+  position: absolute;
+  font-size: 1.1rem;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  color: gray;
+  font-family:Arial;
+  font-weight: bold;
+  padding: 0 0.9rem;
+  margin: 0 0.5rem;
+  transition: .1s ease-out;
+  transform-origin: left top;
+  pointer-events: none;
+}
+
+#nome-textfield {
+  width:100%;
+  font-size: 1.5rem;
+  font-family: Arial;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 0.5rem 0.7rem;
+  margin:2px;
+  color: gray;
+  transition: 0.1s ease-out;
+}
+#nome-textfield:focus {
+  border-color: rgb(224, 45, 45);;
+}
+#nome-textfield:focus + label {
+  color: rgb(224, 45, 45);;
+  top: 0;
+  transform: translateY(-50%) scale(.9);
+}
+#nome-textfield:not(:placeholder-shown) + label {
+  top: 0;
+  transform: translateY(-50%) scale(.9);
+}
+
+#smoke {
+	position: absolute;
+	z-index: 3;
+	width: 1px; height: 160px;
+	left: 50%; bottom: 30px;
+}
+
+/* smoke balls */
+
+#smoke span {
+  display: block;
+	position: absolute;
+	bottom: 15px !important; left: 45%; margin-left:-14vw;
+	height: 0px; width: 0px;
+	border: 10vh solid #eaecd2ab;
+	border-radius: 35px;
+	left: -14px; opacity: 0;
+	transform: scale(0.2);
+}
+
+/* Smoke animation */
+
+@keyframes smokeL {
+	0%   { transform: scale(0.2) translate(0, 0) }
+	10%  { opacity: 1; transform: scale(0.2) translate(0, -5px) }
+	100% { opacity: 0; transform: scale(1) translate(-20px, -130px) }
+}
+
+@keyframes smokeR {
+	0%   { transform: scale(0.2) translate(0, 0) }
+	10%  { opacity: 1; transform: scale(0.2) translate(0, -5px) }
+	100% { opacity: 0; transform: scale(1) translate(20px, -130px) }
+}
+
+#smoke .s0 { animation: smokeL 10s 0s infinite }
+#smoke .s1 { animation: smokeR 10s 1s infinite }
+#smoke .s2 { animation: smokeL 10s 2s infinite }
+#smoke .s3 { animation: smokeR 10s 3s infinite }
+#smoke .s4 { animation: smokeL 10s 4s infinite }
+#smoke .s5 { animation: smokeR 10s 5s infinite }
+#smoke .s6 { animation: smokeL 10s 6s infinite }
+#smoke .s7 { animation: smokeR 10s 7s infinite }
+#smoke .s8 { animation: smokeL 10s 8s infinite }
+#smoke .s9 { animation: smokeR 10s 9s infinite }

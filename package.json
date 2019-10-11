@@ -29,7 +29,7 @@
     "@ngx-translate/core": "8.0.0",
     "@ngx-translate/http-loader": "^2.0.0",
     "cordova": "^9.0.0",
-    "cordova-android": "8.0.0",
+    "cordova-android": "^8.1.0",
     "es6-promise-plugin": "^4.2.2",
     "ionic-angular": "3.9.5",
     "ionic-plugin-navigation-bar-color": "^1.0.2",

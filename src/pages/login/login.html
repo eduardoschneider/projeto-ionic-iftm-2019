@@ -1,31 +1,40 @@
 <ion-content>
-  <div class="background"></div>
-  <div class="row">
-    <img src="assets/zebra.png" class="home-icon"/>
-  </div>
-  <form (submit)="sendPostRequest(account.usuario,account.password);" class="row form">
-    <ion-list>
-      <div class="col-12">
-        <ion-item class="transparent">
-          <img src="assets/zebra.png" width="10px" height="auto"/>
-          <ion-input placeholder="Usuário" class="input-pattern" type="text" [(ngModel)]="account.usuario" name="email"></ion-input>
-        </ion-item>
-      </div>
-      <br/>
-      <div class="col-12">
-        <ion-item class="transparent">
-          <ion-input placeholder="Senha" class="input-pattern" type="password" [(ngModel)]="account.password" name="password"></ion-input>
-        </ion-item>
-      </div>
-      <div padding>
-        <button ion-button color="primary" class="login-button" block>Login</button>
-      </div>
+  <div class="header">
 
-    </ion-list>
-  </form>
-  <div class="row footer">
-    © copyright 2019 | design by eduardo schneider :)
+  </div>
+  <div class="prato">
+    <img src="../../assets/prato.png" width="70%"/>
+    <div id="smoke">
+        <span class="s0"></span>
+        <span class="s1"></span>
+        <span class="s2"></span>
+        <span class="s3"></span>
+        <span class="s4"></span>
+        <span class="s5"></span>
+        <span class="s6"></span>
+        <span class="s7"></span>
+        <span class="s8"></span>
+        <span class="s9"></span>
+      </div>
   </div>
 
+
+  <div class="text-before-option">
+    <div class="container-login">
+        <div class="material-textfield">
+          <input id="nome-textfield" placeholder=" " type="text">
+          <label id="nome">E-mail</label>
+        </div>
+        <div class="material-textfield">
+          <input id="nome-textfield" placeholder=" " type="text">
+          <label id="nome">Senha</label>
+        </div>
+        <div class="button-login" (click)="login()">Sign in</div>
+      </div>
+       <div class="go-to-bottom">
+          <button class="button-login-facebook" (click)="login()"><img src="../../assets/fb.png" width="20px"/><span style="margin-left:5px;">Sign in with Facebook</span></button>
+          <button class="button-login-google" (click)="login()"><img src="../../assets/google.png" width="20px"/><span style="margin-left:5px;">Sign in with Google</span></button>
+       </div>
+  </div>
 
 </ion-content>

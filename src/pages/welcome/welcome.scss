@@ -1,203 +1,131 @@
-$blabla: blue;
-@import url(https://fonts.googleapis.com/css?family=Squada+One);
-@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap');
-* {
-	font-family: 'Darker Grotesque', sans-serif !important;
-}
-.content {
-	position:absolute !important;
-	display:flex;
-	align-items:center !important;
-	justify-content:center;
-	height:100%;
-	text-align:center;
-	padding:40px;
-	width:100%;
-    top:0;
-	font-size:25px;
-	font-weight:800;
-	text-align:center;
+.background-welcome {
+  background: url("../../assets/damn.png") no-repeat center center;
+  background-size:cover;
+  width:100%;
+  height:100%;
 }
 
-.background {
-	background-size:cover;
-	width:100%;
-	position:fixed;
-	height:100%;
-  background-image: url("../../assets/bg.jpg");
-  animation: shrink 15s infinite alternate;
+.button-welcome {
+  display: inline-block;
+  font-family: "Montserrat", "Trebuchet MS", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  padding: 1.3em 1.6em;
+  display: flex;
+  align-items: flex-start;
+  background: #009ED8;
+  border: none;
+  color: rgb(224, 45, 45);
+  transition: 0.2s;
 }
-
-@keyframes shrink {
-  0% {
-    background-size: 170% 110%;
-  }
-  100% {
-    background-size: 160% 100%;
-  }
-}
-
-.row {
-	display:flex;
-	align-items:flex-start;
-	justify-content:center;
-	position:relative;
-}
-
-
-.home-icon {
-	position:relative;
-	margin-top:50px;
-	width:25vh;
-	height:25vh;
-}
-
-.button-begin {
-	position:absolute;
-	bottom:150px;
-	width:100%;
-}
-
-
-.customLink {
-  display: block;
-  width: 220px;
-  height: 70px;
-  z-index: 1;
-}
-
-.customLink:after {
-  content: '';
-  background: linear-gradient(120deg, #0e6815, #0d180d, #00911f);
-  background-size: 400% 400%;
-  -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 4px 66px, 4px 100%, 100% 100%, 100% 0%, 0% 0%);
-  -moz-animation: gradient 3s ease-in-out infinite, border 1.5s forwards ease-in-out reverse;
-  -webkit-animation: gradient 3s ease-in-out infinite, border 1.5s forwards ease-in-out reverse;
-  animation: gradient 3s ease-in-out infinite, border 1.5s forwards ease-in-out reverse;
-}
-
-.customLink > span {
-  display: block;
-  background: linear-gradient(120deg, #0e6815, #0d180d, #00911f);
-  background-size: 400% 400%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-animation: gradient 3s ease-in-out infinite;
-  -webkit-animation: gradient 3s ease-in-out infinite;
-  animation: gradient 3s ease-in-out infinite;
-}
-
-/* helpers */
-.absolute-centering, body:after, .customLink, .customLink:after {
+.button-welcome:before,
+.button-welcome:after {
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
   bottom: 0;
-  margin: auto;
-}
-
-.text-formatting, .customLink {
-  text-transform: uppercase;
-  text-decoration: none;
+  right: 0;
+  padding-top: inherit;
+  padding-bottom: inherit;
+  width: 2.8em;
+  content: "\00a0";
+  font-family: 'FontAwesome', sans-serif;
+  font-size: 1.2em;
   text-align: center;
-  letter-spacing: 2px;
-  line-height: 70px;
-  font-weight:800;
-  font-size: 25px;
+  transition: 0.2s;
+  transform-origin: 50% 60%;
 }
 
-/* motion */
-@-moz-keyframes gradient {
-  0% {
-    background-position: 14% 0%;
-  }
-  50% {
-    background-position: 87% 100%;
-  }
-  100% {
-    background-position: 14% 0%;
-  }
+.button-welcome:hover {
+  background: #0079a5;
 }
-@-webkit-keyframes gradient {
-  0% {
-    background-position: 14% 0%;
-  }
-  50% {
-    background-position: 87% 100%;
-  }
-  100% {
-    background-position: 14% 0%;
-  }
+.button-welcome:active,
+.button-welcome:focus {
+  background: #002e3f;
+  outline: none;
 }
-@keyframes gradient {
-  0% {
-    background-position: 14% 0%;
-  }
-  50% {
-    background-position: 87% 100%;
-  }
-  100% {
-    background-position: 14% 0%;
-  }
+.button-welcome {
+  font-family:"font";
+  min-width: 15em;
 }
-@-moz-keyframes border {
-  0% {
-    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 4px 66px, 4px 100%, 100% 100%, 100% 0%, 0% 0%);
-  }
-  25% {
-    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 216px 66px, 216px 100%, 100% 100%, 100% 0%, 0% 0%);
-  }
-  50% {
-    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 100% 0%, 0% 0%);
-  }
-  75% {
-    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 0%, 0% 0%);
-  }
-  100% {
-    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 0% 100%);
-  }
+.arrow {
+  background: white;
 }
-@-webkit-keyframes border {
-  0% {
-    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 4px 66px, 4px 100%, 100% 100%, 100% 0%, 0% 0%);
-  }
-  25% {
-    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 216px 66px, 216px 100%, 100% 100%, 100% 0%, 0% 0%);
-  }
-  50% {
-    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 100% 0%, 0% 0%);
-  }
-  75% {
-    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 0%, 0% 0%);
-  }
-  100% {
-    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 0% 100%);
-  }
+.arrow:hover {
+  background: white;
 }
-@keyframes border {
-  0% {
-    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 4px 66px, 4px 100%, 100% 100%, 100% 0%, 0% 0%);
+.arrow:active,
+.arrow:focus {
+  background: white;
+}
+.arrow:after {
+  color: rgb(224, 45, 45);
+  content: "»»";
+  font-weight: bold;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-right:10px;
+}
+.arrow:after {
+  -webkit-animation: bounceright 0.3s alternate ease infinite;
+  animation: bounceright 0.3s alternate ease infinite;
+}
+
+.button-welcome {
+  box-shadow:0px 0px 3px black;
+  width:70%;
+  border-radius:5px;
+}
+
+@-webkit-keyframes bounceright {
+  from {
+    -webkit-transform: translateX(0);
   }
-  25% {
-    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 216px 66px, 216px 100%, 100% 100%, 100% 0%, 0% 0%);
-  }
-  50% {
-    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 100% 0%, 0% 0%);
-  }
-  75% {
-    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 0%, 0% 0%);
-  }
-  100% {
-    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 0% 100%);
+  to {
+    -webkit-transform: translateX(3px);
   }
 }
 
+.container {
+  width:100%;
+  height:35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  bottom:5vh;
+}
 
-.footer {
-position:fixed;
-	bottom:10px;
-	width:100%;
-	font-weight:700;
-	font-size:13px;
+@font-face {
+  font-family: "font";
+  src: url(../../assets/Typo.otf);
+}
+
+.cookcrawler {
+  margin-bottom:8vh;
+  min-width:100%;
+  margin-left:50px;
+  font-size:6.5vh;
+  text-shadow:1px 1px 4px rgb(42, 42, 42);
+  color:white;
+  font-family: "font";
+}
+
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
 }
